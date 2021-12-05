@@ -1,0 +1,362 @@
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab--content{
+    padding: 25px;
+}
+
+
+@media screen and (max-width: 47em) {
+    .slider-em .slider--em--border{
+        top:1.4rem;
+    }
+}
+
+/*侧边栏*/
+@media screen and (min-width: 47.875em) {
+  #meun{
+      display: none;
+  }
+}
+
+.content-main{
+    display: none;
+}
+
+@media screen and (max-width: 47.875em) {
+    .content-main{
+        display: block;
+    }
+}
+
+
+.is--ctl-detail .content-main--inner {
+    background: #fff;
+    position: absolute;
+}
+
+/*banner*/
+/*.ad .item img{*/
+/*    width: 100%;*/
+/*}*/
+
+
+
+/*home-content*/
+.home-content{
+    width: 100%;
+    margin-bottom: 66px;
+}
+
+.introduce{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.introduce-content{
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 0;
+}
+.introduce-content h1,.introduce-content h3{
+    text-align: center;
+}
+.introduce-content h1{
+    color: #888888;
+}
+.introduce-content h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    color: #333333;
+    font-weight: normal;
+}
+.introduce-content p{
+    word-wrap:break-word;
+    overflow:hidden;
+    width: 80%;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    color: #333333;
+}
+.introduce-content .img-content{
+    text-align: center;
+}
+.introduce-content .item{
+    display: inline-block;
+    width: calc(36% - 2rem);
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+.introduce-content .item img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+@media screen and (max-width: 50em) {
+    .introduce-content .item{
+        display: inline-block;
+        width: 100%;
+        padding: 1rem;
+        margin-right: 1rem;
+    }
+    .introduce-content .item img{
+        width: 50%;
+    }
+}
+
+/*downloads*/
+.box-downloads{
+    margin: 20px auto;
+    width:80%;
+    height:297px;
+    border-radius:4px;
+    border:1px solid rgba(151,151,151,1);
+    overflow: hidden;
+}
+.box-downloads .item{
+     color: #333333;
+    line-height: 42px;
+     background-color: rgba(245,245,245,1);
+     width:100%;
+     height:74px;
+     font-size: 14px;
+}
+.box-downloads .item .downloads-pre{
+    float: right;
+}
+.box-downloads .item .downloads-pre .download{
+    background-image: none;
+    padding: 2px 22px;
+    font-weight: normal;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.box-downloads .item:nth-child(2n){
+    color: #333333;
+    background-color: #fff;
+}
+@media screen and (max-width: 35em) {
+    .box-downloads{
+        width:100%;
+    }
+}
+
+/*多栏目产品*/
+.home-content .product{
+    /*width: 80%;*/
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+.home-content .product .product-content h1{
+    color: #888888;
+}
+.home-content .product .product-content h3{
+    font-weight: normal;
+    color: #333333;
+    margin-top: 14px;
+}
+
+.home-content .product .product-content .img-pro .item h4{
+    margin: 0;
+    padding: 10px;
+    height: 3rem;
+}
+
+.home-content .product .product-content .img-pro{
+   width: 80%;
+    margin: auto;
+}
+
+.home-content .product .product-content .img-pro .item p{
+    margin-top: 1rem;
+}
+
+.home-content .product .product-content .item{
+    display: inline-block;
+    width: 520px;
+    padding: 1.2rem;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.home-content .product .product-content .item .img{
+    display:block;
+    height: 370px;
+    border: 1px solid #CCCCCC;
+    margin: auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.home-content .product .product-content .item img{
+    height: 100%;
+    /*width: 100%;*/
+}
+
+
+.home-content .product .product-content .item .text{
+    background-color: #bfbfbf;
+    border-radius: 4px;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+.home-content .product .product-content .item .text a{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+/*图片自适应*/
+.home-content .other .other-content{
+    width: 80%;
+    margin: 60px auto;
+    font-size: 0;
+    text-align: center;
+}
+.home-content .other .other-content h1{
+    color: #888888;
+}
+.home-content .other .other-content h3{
+    font-weight: normal;
+    color: #333333;
+    margin-top: 14px;
+}
+
+.home-content .other .other-content .item{
+    display: inline-block;
+    width: 20%;
+    padding: 0.5rem;
+}
+.home-content .other .other-content .item img{
+    width: 100%;
+}
+
+@media screen and (max-width: 58em) {
+    .home-content .other .other-content .item{
+        display: inline-block;
+        width: 38%;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 38em) {
+    .home-content .other .other-content .item{
+        display: inline-block;
+        width: 60%;
+        padding: 0.5rem;
+    }
+}
+
+/*辅助标签区域*/
+.label-show{
+    width: 1336px;!important;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 77.5em) {
+    .label-show{
+        display: inline;
+    }
+}
+
+
+/*文章图片大小*/
+.article-img{
+    /*display: inline-block;*/
+     margin: 10px auto;
+     text-align: center;
+     width: 90%;
+ }
+.article-img p{
+    width: 40%;
+   font-size: 12px;
+    color: #999999;
+    text-align: center;
+}
+.article-img img{
+    width: 40%;
+}
+
+/*文章图片双图*/
+.box-article-img{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+.box-article-img .article{
+    display: inline-block;
+    /*width: 40%;*/
+    padding: 10px;
+}
+.box-article-img .article p{
+    font-size: 14px;
+    color: #999999;
+}
+
+@media screen and (max-width: 48em) {
+    .introduce-content {
+        width: 100%;
+        margin: 2rem auto;
+        font-size: 0;
+    }
+    .article-img {
+        /* display: inline-block; */
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+    .introduce-content p {
+        word-wrap: break-word;
+        overflow: hidden;
+        width: 100%;
+        margin: 0.5rem auto;
+        font-size: 1rem;
+        color: #333333;
+    }
+
+    .box-article-img .article img{
+       width: 100%;
+    }
+
+}
+
+/*文章内容段落*/
+.introduce .introduce-content .article-content p{
+    text-indent: 2em;
+}
+
+/*视频*/
+.box-video{
+    width: 80%;
+    margin: 20px auto;
+}
+.box-video .video{
+
+}
+.box-video .video video{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 48em) {
+
+    .box-video .video video {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

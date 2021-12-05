@@ -1,0 +1,29 @@
+
+/* 遮罩层 */
+#hui-mask{position:fixed; z-index:20; background:red; width:100%; left:0px; top:0px; height:100%;}
+
+/* loading */
+@keyframes hui-a-rotate360{0%{transform:rotate(0deg);} 50%{transform:rotate(180deg);} 100%{transform:rotate(360deg);}}
+@-webkit-keyframes hui-a-rotate360{0%{-webkit-transform:rotate(0deg);} 50%{-webkit-transform:rotate(180deg);} 100%{-webkit-transform:rotate(360deg);}}
+@-moz-keyframes hui-a-rotate360{0%{-moz-transform:rotate(0deg);} 50%{-moz-transform:rotate(180deg);} 100%{-moz-transform:rotate(360deg);}}
+@-o-keyframes hui-a-rotate360{0%{-o-transform:rotate(0deg);} 50%{-o-transform:rotate(180deg);} 100%{-o-transform:rotate(360deg);}}
+.hui-loading-wrap{position:absolute; z-index:1; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%);}
+.hui-loading{width:22px; height:22px; line-height:20px; font-size:18px; text-align:center; font-family:"hui-font" !important; animation:hui-a-rotate360 1s infinite linear; -webkit-animation:hui-a-rotate360 1s infinite linear; -moz-animation:hui-a-rotate360 1s infinite linear; -o-animation:hui-a-rotate360 1s infinite linear; float:left;}
+.hui-loading:before{content:"\e647";}
+.hui-loading-text{float:left; line-height:inherit; padding-left:3px;}
+
+/* loading */
+#hui-transparent-mask{position:fixed; z-index:20; width:100%; left:0px; top:0px; height:100%; background:rgba(255,255,255,0.6);}
+#hui-loading{
+    width:100%; position:fixed;
+    z-index:21; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%);}
+#hui-loading-in{margin:0 auto; width:42px;}
+@-webkit-keyframes hui-line-scale{0%{-webkit-transform:scaley(1); transform:scaley(1);} 50%{-webkit-transform:scaley(0.4); transform:scaley(0.4);} 100%{-webkit-transform:scaley(1); transform:scaley(1);}}
+@keyframes hui-line-scale{0%{-webkit-transform:scaley(1); transform:scaley(1);} 50%{-webkit-transform:scaley(0.4); transform:scaley(0.4);} 100%{-webkit-transform:scaley(1); transform:scaley(1);}}
+#hui-loading-in > div:nth-child(1){-webkit-animation:hui-line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08); animation:hui-line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08);}
+#hui-loading-in > div:nth-child(2){-webkit-animation:hui-line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08); animation:hui-line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08);}
+#hui-loading-in > div:nth-child(3){-webkit-animation:hui-line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08); animation:hui-line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08);}
+#hui-loading-in > div:nth-child(4){-webkit-animation:hui-line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08); animation:hui-line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08);}
+#hui-loading-in > div:nth-child(5){-webkit-animation:hui-line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08); animation:hui-line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08);}
+#hui-loading-in > div{background-color:#11563e; width:4px; height:25px; border-radius:2px; margin:2px; -webkit-animation-fill-mode:both; animation-fill-mode:both; display:inline-block;}
+#hui-loading-text{line-height:30px; text-align:center; padding-top:5px; font-size:12px; color:#11563e;}
